@@ -8,8 +8,8 @@ export default {
     readMore: 'Read More',
     ourServices: 'Our Services',
     testimonials: 'Patient Testimonials',
-    address: '123 Healthcare Avenue, Addis Ababa',
-    phone: '+251 11 234 5678',
+    address: 'tultdimtu addisababa',
+    phone: '0912204709',
     email: 'info@gedaclinic.com',
     copyright: '© 2025 GEDA Clinic. All rights reserved.',
   },
@@ -188,7 +188,7 @@ export default {
     phoneTitle: 'Call Us',
     emailTitle: 'Email Us',
     hoursTitle: 'Working Hours',
-    hours: 'Monday to Friday: 8:00 AM - 8:00 PM\nSaturday: 9:00 AM - 5:00 PM\nSunday: Closed',
+    hours: 'Monday - Friday: 1:30 AM - 2:00 PM\nSaturday: 2:00 AM - 12:00 PM\nSunday: Closed',
     formTitle: 'Send Us a Message',
     nameLabel: 'Your Name',
     emailLabel: 'Your Email',
@@ -197,7 +197,7 @@ export default {
     submitButton: 'Send Message',
     emergencyTitle: 'Emergency Contact',
     emergencyText: 'For medical emergencies, please call our 24/7 emergency line:',
-    emergencyNumber: '+251 11 987 6543'
+    emergencyNumber: '0912204709'
   },
   testimonials: {
     title: 'Patient Testimonials',
@@ -226,26 +226,6 @@ export default {
         name: 'Liya Tadesse',
         text: 'I recently switched to GEDA Clinic and I\'m so glad I did. The level of care and attention I received was outstanding. The facilities are clean and modern, and the staff is professional and friendly.',
         rating: 5
-      }
-    ]
-  },
-  chatbot: {
-    title: 'GEDA Assistant',
-    welcome: 'Hello! How can I help you today?',
-    placeholder: 'Type your question here...',
-    sendButton: 'Send',
-    faq: [
-      {
-        question: 'What are your working hours?',
-        answer: 'We are open Monday to Friday from 8:00 AM to 8:00 PM, Saturday from 9:00 AM to 5:00 PM, and closed on Sunday.'
-      },
-      {
-        question: 'How can I book an appointment?',
-        answer: 'You can book an appointment through our website, by calling us at +251 11 234 5678, or via WhatsApp and Telegram.'
-      },
-      {
-        question: 'What services do you offer?',
-        answer: 'We offer a range of services including general medicine and pediatrics. Visit our Services page for more information.'
       }
     ]
   }

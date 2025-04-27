@@ -3,27 +3,27 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import SectionTitle from '../common/SectionTitle';
-import { Doctor } from '../../types'; // Ensure correct type import path
+import { Doctor } from '../types'; // Ensure correct type import path
 
 // Define the specific team members (same as in DoctorsPage.tsx)
 const teamMembers: Doctor[] = [
   {
     id: 1, 
-    name: 'Dr. Abebe Kebede', 
+    name: 'Dr. Fayisa', 
     specialty: 'General Practitioner', 
     bio: 'Dr. Kebede has over 10 years of experience in general medicine.', 
     education: 'MD, Addis Ababa University', 
     experience: '10+ Years', 
-    image: 'https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' 
+    image: '/../assets/images/doc.png' 
   },
   {
     id: 2, 
-    name: 'Nurse Aster Lemma', 
+    name: 'Nurse Hana', 
     specialty: 'Registered Nurse', 
-    bio: 'Nurse Lemma is dedicated to providing compassionate patient care.', 
+    bio: 'Nurse Hana  is dedicated to providing compassionate patient care.', 
     education: 'BSc Nursing, Gondar University', 
     experience: '5+ Years', 
-    image: 'https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' 
+    image: '.' 
   }
 ];
 

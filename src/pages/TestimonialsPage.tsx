@@ -5,13 +5,13 @@ import { Star, Quote } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    name: 'John Doe',
+    name: 'Abel Zeleke',
     rating: 5,
     text: 'The service was excellent and the staff was very friendly.',
   },
   {
     id: 2,
-    name: 'Jane Smith',
+    name: 'Blen Admasu',
     rating: 4,
     text: 'I had a great experience and would highly recommend this clinic.',
   },

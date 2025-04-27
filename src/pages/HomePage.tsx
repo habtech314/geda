@@ -2,26 +2,27 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import HeroSection from '../components/home/HeroSection';
 import WelcomeSection from '../components/home/WelcomeSection';
-import DoctorsPreview from '../components/home/DoctorsPreview';
+
 import AppointmentCTA from '../components/home/AppointmentCTA';
 import { Star, Quote, HeartPulse, Stethoscope, Baby, Users, ClipboardCheck, CheckCircle } from 'lucide-react';
 import SectionTitle from '../components/common/SectionTitle'; // Adjust the path as needed
-import generalMedicineImg from '../assets/images/genral.jpg';
+import generalMedicineImg from '../assets/images/general.jpg';
 import pediatricsImg from '../assets/images/paiadtry.jpg';
 import familyPlanningImg from '../assets/images/family.jpg';
 import antenatalCareImg from '../assets/images/antenatal.jpg';
 import prenatalCareImg from '../assets/images/parental.jpg';
-// Removed dktLogo import from here
+import DoctorsPreview from '../pages/DoctorsPage'; // Adjust the path if necessary
+
 const testimonials = [
   {
     id: 1,
-    name: 'John Doe',
+    name: 'Abel Zeleke',
     rating: 5,
     text: 'The service was excellent and the staff was very friendly.',
   },
   {
     id: 2,
-    name: 'Jane Smith',
+    name: 'Blen Admasu',
     rating: 4,
     text: 'I had a great experience and would highly recommend this clinic.',
   },
@@ -140,8 +141,8 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Doctors Section */}
+      
       <DoctorsPreview />
-
       {/* Appointment Call-to-Action Section */}
       <AppointmentCTA />
 
@@ -197,8 +198,7 @@ const HomePage: React.FC = () => {
         <iframe
           title="Clinic Location"
           // --- Updated src attribute ---
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4003184.2942058514!2d34.59133494587182!3d11.526036951937087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b1ff2355e640f%3A0x11b40c9aedbfc0eb!2sGeda%20Health%20Center!5e0!3m2!1sen!2set!4v1745703408216!5m2!1sen!2set"
-          // --- End of updated src attribute ---
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.0816115257817!2d38.8188484!3d8.8632834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b794457a3e095%3A0xf4c29892d9cf462f!2zVHVsdSBEaW10dSBDb25kb21pbml1bXMgUHJvamVjdCAxMiB8IOGJseGIiSDhi7LhiJ3hibEg4Yqu4YqV4Yu24Yia4YqS4Yuo4YidIOGNleGIruGMgOGKreGJtSAxMg!5e1!3m2!1sen!2set!4v1745784802183!5m2!1sen!2set"
           width="100%" // Kept 100% for responsiveness
           height="450" // Updated height
           style={{ border: 0 }}

@@ -7,7 +7,7 @@ import SectionTitle from '../components/common/SectionTitle';
 import { Service } from '../types';
 
 // Import images from src
-import generalMedicineImg from '../assets/images/genral.jpg';
+import generalMedicineImg from '../assets/images/general.jpg';
 import pediatricsImg from '../assets/images/paiadtry.jpg';
 import familyPlanningImg from '../assets/images/family.jpg';
 import antenatalCareImg from '../assets/images/antenatal.jpg';

@@ -8,8 +8,8 @@ export default {
     readMore: 'ተጨማሪ ያንብቡ',
     ourServices: 'አገልግሎቶቻችን',
     testimonials: 'የደንበኞች ምስክርነቶች',
-    address: '123 ጤና አቬኑ፣ አዲስ አበባ',
-    phone: '+251 11 234 5678',
+    address: 'tultdimtu addisababa',
+    phone: '0912204709',
     email: 'info@gedaclinic.com',
     copyright: '© 2025 ጌዳ ክሊኒክ። መብቱ በህግ የተጠበቀ ነው።',
   },
@@ -188,7 +188,7 @@ export default {
     phoneTitle: 'ይደውሉልን',
     emailTitle: 'ኢሜይል ይላኩልን',
     hoursTitle: 'የስራ ሰዓታት',
-    hours: 'ከሰኞ እስከ አርብ: 8:00 AM - 8:00 PM\nቅዳሜ: 9:00 AM - 5:00 PM\nእሁድ: ዝግ',
+    hours: 'Monday - Friday: 1:30 AM - 2:00 PM\nSaturday: 2:00 AM - 12:00 PM\nSunday: Closed',
     formTitle: 'መልዕክት ይላኩልን',
     nameLabel: 'ስምዎ',
     emailLabel: 'ኢሜይልዎ',
@@ -197,7 +197,7 @@ export default {
     submitButton: 'መልዕክት ላክ',
     emergencyTitle: 'የአስቸኳይ ጊዜ ግንኙነት',
     emergencyText: 'ለህክምና አስቸኳይ ጊዜ፣ እባክዎ የ24/7 አስቸኳይ መስመራችንን ይደውሉ:',
-    emergencyNumber: '+251 11 987 6543'
+    emergencyNumber: '0912204709'
   },
   testimonials: {
     title: 'የታካሚዎች ምስክርነቶች',
@@ -226,26 +226,6 @@ export default {
         name: 'ልያ ታደሰ',
         text: 'በቅርቡ ወደ ጌዳ ክሊኒክ ተቀይሬ በጣም ደስ ብሎኛል። ያገኘሁት የእንክብካቤና ትኩረት ደረጃ ከፍተኛ ነበር። ተቋሞቹ ንፁህና ዘመናዊ ናቸው፣ እና ሰራተኞቹ ባለሙያና ወዳጃማ ናቸው።',
         rating: 5
-      }
-    ]
-  },
-  chatbot: {
-    title: 'ጌዳ ረዳት',
-    welcome: 'ሰላም! ዛሬ እንዴት ልረዳዎት እችላለሁ?',
-    placeholder: 'ጥያቄዎን እዚህ ይጻፉ...',
-    sendButton: 'ላክ',
-    faq: [
-      {
-        question: 'የስራ ሰዓታችሁ ምንድን ናቸው?',
-        answer: 'ከሰኞ እስከ አርብ ከ8:00 AM እስከ 8:00 PM፣ ቅዳሜ ከ9:00 AM እስከ 5:00 PM ክፍት ነን፣ እና እሁድ ዝግ ነን።'
-      },
-      {
-        question: 'ቀጠሮ እንዴት መያዝ እችላለሁ?',
-        answer: 'በድረ-ገጻችን፣ በስልክ ቁጥራችን +251 11 234 5678 በመደወል፣ ወይም በዋትስአፕና በቴሌግራም ቀጠሮ መያዝ ይችላሉ።'
-      },
-      {
-        question: 'ምን አገልግሎቶችን ታቀርባላችሁ?',
-        answer: 'አጠቃላይ ሕክምናና የህፃናት ሕክምናን ጨምሮ የተለያዩ አገልግሎቶችን እናቀርባለን። ለተጨማሪ መረጃ የአገልግሎቶቻችን ገጽን ይጎብኙ።'
       }
     ]
   }
