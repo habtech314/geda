@@ -1,0 +1,6 @@
+# Allow all web crawlers access to all content
+User-agent: *
+Allow: /
+
+# Sitemap location (we will create this next)
+Sitemap: https://geda.vercel.app/sitemap.xml

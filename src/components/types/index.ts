@@ -14,6 +14,7 @@ export type Service = {
   description: string;
   features: string[];
   icon: string;
+  image?: string; // Added image property
 };
 
 export type Testimonial = {

@@ -1,4 +1,6 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
+import SEO from '../components/common/SEO'; // Import the SEO component
 import { motion } from 'framer-motion';
 import { Star, Quote } from 'lucide-react';
 
@@ -18,10 +20,38 @@ const testimonials = [
  
 ];
 
-const TestimonialsPreview: React.FC = () => {
+const TestimonialsPreview: React.FC = () => { // Consider renaming if this IS the main Testimonials page
+  const { t } = useTranslation();
+
+  const pageTitle = t('testimonials.title', 'Patient Testimonials'); // Add 'testimonials.title' to translation files
+  const pageDescription = t('testimonials.subtitle', 'Hear from satisfied patients about their experience at GEDA Clinic.'); // Add 'testimonials.subtitle'
+  const canonicalUrl = "https://geda.vercel.app/testimonials";
+  // Use a relevant image, maybe a collage or a generic positive healthcare image
+  const ogImageUrl = "https://geda.vercel.app/assets/images/general.jpg"; // Using general image as placeholder
+
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <>
+      <SEO
+        title={pageTitle}
+        description={pageDescription}
+        canonicalUrl={canonicalUrl}
+        ogUrl={canonicalUrl}
+        ogTitle={pageTitle}
+        ogDescription={pageDescription}
+        ogImage={ogImageUrl}
+        twitterTitle={pageTitle}
+        twitterDescription={pageDescription}
+        twitterImage={ogImageUrl}
+        keywords={[ // Custom keywords for Testimonials page
+          'GEDA Clinic testimonials',
+          'patient reviews Addis Ababa',
+          'clinic feedback',
+          'healthcare experience',
+          'doctor reviews',
+        ]}
+      />
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
         <h2 className="text-3xl font-semibold text-center mb-8">What Our Patients Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {testimonials.slice(0, 2).map((testimonial) => (
@@ -58,8 +88,9 @@ const TestimonialsPreview: React.FC = () => {
             </motion.div>
           ))}
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   );
 };
 

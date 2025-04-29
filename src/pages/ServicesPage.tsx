@@ -1,10 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import SEO from '../components/common/SEO'; // Import the SEO component
 import { motion } from 'framer-motion';
 import { Stethoscope, Baby, CheckCircle, Users, HeartPulse, ClipboardCheck } from 'lucide-react';
 import PageHeader from '../components/common/PageHeader';
 import SectionTitle from '../components/common/SectionTitle';
-import { Service } from '../types';
+import { Service } from '../components/types'; // Corrected import path
 
 // Import images from src
 import generalMedicineImg from '../assets/images/general.jpg';
@@ -59,14 +60,43 @@ const ServicesPage: React.FC = () => {
     },
   ];
 
+  const pageTitle = t('services.title');
+  const pageDescription = t('services.subtitle');
+  const canonicalUrl = "https://geda.vercel.app/services";
+  const ogImageUrl = "https://images.pexels.com/photos/305565/pexels-photo-305565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"; // Use PageHeader image
+
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <PageHeader 
+    <>
+      <SEO
+        title={pageTitle}
+        description={pageDescription}
+        canonicalUrl={canonicalUrl}
+        ogUrl={canonicalUrl}
+        ogTitle={pageTitle}
+        ogDescription={pageDescription}
+        ogImage={ogImageUrl}
+        twitterTitle={pageTitle}
+        twitterDescription={pageDescription}
+        twitterImage={ogImageUrl}
+        keywords={[ // Custom keywords for Services page
+          'GEDA Clinic services',
+          'medical services Addis Ababa',
+          'general medicine',
+          'pediatric care',
+          'family planning clinic',
+          'antenatal care Addis Ababa',
+          'prenatal care',
+          'routine check-ups',
+          'vaccinations',
+        ]}
+      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <PageHeader
         title={t('services.title')} 
         subtitle={t('services.subtitle')}
         backgroundImage="https://images.pexels.com/photos/305565/pexels-photo-305565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -119,7 +149,7 @@ const ServicesPage: React.FC = () => {
                   
                   <h4 className="text-lg font-medium mb-3 text-neutral-800">Our {service.title} Services Include:</h4>
                   <ul className="space-y-3">
-                    {service.features.map((feature, i) => (
+                    {service.features.map((feature: string, i: number) => ( // Added type annotations
                       <li key={i} className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-primary-500 mr-2 mt-0.5 flex-shrink-0" />
                         <span className="text-neutral-600">{feature}</span>
@@ -132,7 +162,8 @@ const ServicesPage: React.FC = () => {
           </div>
         </div>
       </section>
-    </motion.div>
+      </motion.div>
+    </>
   );
 };
 

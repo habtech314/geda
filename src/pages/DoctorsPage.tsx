@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import SEO from '../components/common/SEO'; // Import the SEO component
 import { motion } from 'framer-motion';
 import SectionTitle from '../components/common/SectionTitle';
-import { Doctor } from '../types';
+import { Doctor } from '../components/types'; // Corrected import path for Doctor type
 
 // Import images
 import DoctorImage from '../assets/images/doc.png'; // Replace with the actual path to the doctor image
@@ -30,12 +31,40 @@ const teamMembers: Doctor[] = [
   }
 ];
 
-const DoctorsPreview: React.FC = () => {
+const DoctorsPreview: React.FC = () => { // Consider renaming component if this IS the main Doctors page
   const { t } = useTranslation();
 
+  const pageTitle = t('doctors.title', 'Meet Our Doctors'); // Add 'doctors.title' to translation files
+  const pageDescription = t('doctors.subtitle', 'Our expert team of medical professionals at GEDA Clinic.'); // Add 'doctors.subtitle'
+  const canonicalUrl = "https://geda.vercel.app/doctors";
+  // Use a relevant image, maybe a team photo or a generic medical image if no specific one exists
+  const ogImageUrl = "https://geda.vercel.app/assets/images/doc.png"; // Example using one doctor's image
+
   return (
-    <section className="py-16 md:py-24 bg-white">
-      <div className="container mx-auto px-4">
+    <>
+      <SEO
+        title={pageTitle}
+        description={pageDescription}
+        canonicalUrl={canonicalUrl}
+        ogUrl={canonicalUrl}
+        ogTitle={pageTitle}
+        ogDescription={pageDescription}
+        ogImage={ogImageUrl}
+        twitterTitle={pageTitle}
+        twitterDescription={pageDescription}
+        twitterImage={ogImageUrl}
+        keywords={[ // Custom keywords for Doctors page
+          'GEDA Clinic doctors',
+          'medical team Addis Ababa',
+          'general practitioner',
+          'pediatrician Addis Ababa', // Add if applicable
+          'registered nurse',
+          'healthcare professionals',
+          'find a doctor Addis Ababa',
+        ]}
+      />
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4">
         <SectionTitle 
           title={t('home.featuredDoctorsTitle')} 
           subtitle="Our expert team of medical professionals is dedicated to providing the highest standard of care"
@@ -92,8 +121,9 @@ const DoctorsPreview: React.FC = () => {
             {t('common.learnMore')}
           </Link>
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   );
 };
 

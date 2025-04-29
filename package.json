@@ -14,11 +14,13 @@
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^7.0.2",
     "@mui/material": "^7.0.2",
+    "@types/react-helmet": "^6.1.11",
     "framer-motion": "^10.18.0",
     "i18next": "^23.7.19",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-helmet": "^6.1.0",
     "react-i18next": "^14.0.5",
     "react-router-dom": "^6.22.3"
   },

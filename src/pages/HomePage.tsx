@@ -1,4 +1,6 @@
 import React from 'react';
+import { Helmet } from 'react-helmet'; // Import Helmet if not already (though SEO handles it)
+import SEO from '../components/common/SEO'; // Import the SEO component
 import { motion } from 'framer-motion';
 import HeroSection from '../components/home/HeroSection';
 import WelcomeSection from '../components/home/WelcomeSection';
@@ -72,15 +74,35 @@ const services = [
 ];
 
 const HomePage: React.FC = () => {
+  const pageTitle = "GEDA Clinic - Quality Healthcare in Addis Ababa";
+  const pageDescription = "GEDA Clinic offers comprehensive general medicine and pediatric care in Addis Ababa. Experienced doctors, modern facilities. Book your appointment today!";
+  const canonicalUrl = "https://geda.vercel.app/";
+  const ogImageUrl = "https://geda.vercel.app/assets/images/general.jpg"; // Use a relevant image URL
+
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <HeroSection />
-      <WelcomeSection />
+    <>
+      <SEO
+        title={pageTitle}
+        description={pageDescription}
+        canonicalUrl={canonicalUrl}
+        ogUrl={canonicalUrl}
+        ogTitle={pageTitle}
+        ogDescription={pageDescription}
+        ogImage={ogImageUrl}
+        twitterTitle={pageTitle}
+        twitterDescription={pageDescription}
+        twitterImage={ogImageUrl}
+        // Keywords can use the default or be customized:
+        // keywords={['GEDA Clinic', 'Addis Ababa', 'healthcare', 'pediatrics', 'general medicine', 'doctor near me']}
+      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <HeroSection />
+        <WelcomeSection />
  {/* Services Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -227,7 +249,8 @@ const HomePage: React.FC = () => {
   </div>
 </section>
 
-    </motion.div>
+      </motion.div>
+    </>
   );
 };
 

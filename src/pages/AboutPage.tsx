@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import SEO from '../components/common/SEO'; // Import the SEO component
 import { motion } from 'framer-motion';
 import { Award, Target, Heart, Lightbulb } from 'lucide-react';
 import PageHeader from '../components/common/PageHeader';
@@ -19,14 +20,40 @@ const AboutPage: React.FC = () => {
     <Lightbulb className="w-12 h-12 text-primary-500" />
   ];
 
+  const pageTitle = t('about.title'); // Use translated title
+  const pageDescription = t('about.subtitle'); // Use translated subtitle as description
+  const canonicalUrl = "https://geda.vercel.app/about";
+  const ogImageUrl = "https://images.pexels.com/photos/263194/pexels-photo-263194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"; // Use PageHeader image
+
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <PageHeader 
+    <>
+      <SEO
+        title={pageTitle}
+        description={pageDescription}
+        canonicalUrl={canonicalUrl}
+        ogUrl={canonicalUrl}
+        ogTitle={pageTitle}
+        ogDescription={pageDescription}
+        ogImage={ogImageUrl}
+        twitterTitle={pageTitle}
+        twitterDescription={pageDescription}
+        twitterImage={ogImageUrl}
+        keywords={[ // Custom keywords for About page
+          'GEDA Clinic history',
+          'about GEDA Clinic',
+          'clinic mission',
+          'clinic vision',
+          'healthcare team Addis Ababa',
+          'medical professionals',
+        ]}
+      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <PageHeader
         title={t('about.title')} 
         subtitle={t('about.subtitle')}
         backgroundImage="https://images.pexels.com/photos/263194/pexels-photo-263194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -171,7 +198,8 @@ const AboutPage: React.FC = () => {
           </motion.p>
         </div>
       </section>
-    </motion.div>
+      </motion.div>
+    </>
   );
 };
 
