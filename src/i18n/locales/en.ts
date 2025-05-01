@@ -97,6 +97,17 @@ export default {
         'Fertility awareness education'
       ]
     },
+    postnatalCare: {
+      title: 'Postnatal Care',
+      description: 'Support and care for mothers and newborns in the weeks following childbirth, focusing on recovery and adjustment.',
+      features: [
+        'Mother\'s health check-ups',
+        'Newborn health assessments',
+        'Breastfeeding support',
+        'Postpartum depression screening',
+        'Family adjustment counseling'
+      ]
+    },
     antenatalCare: {
       title: 'Antenatal Care',
       description: 'Dedicated care for expectant mothers throughout their pregnancy journey, ensuring the health of both mother and baby.',

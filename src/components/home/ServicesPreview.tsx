@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Stethoscope, Baby, ArrowRight } from 'lucide-react';
 import SectionTitle from '../common/SectionTitle';
-import { Service } from '../../types';
+import { Service } from '../types';
 
 const ServicesPreview: React.FC = () => {
   const { t } = useTranslation();

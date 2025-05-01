@@ -11,7 +11,7 @@ import { Service } from '../components/types'; // Corrected import path
 import generalMedicineImg from '../assets/images/general.jpg';
 import pediatricsImg from '../assets/images/paiadtry.jpg';
 import familyPlanningImg from '../assets/images/family.jpg';
-import antenatalCareImg from '../assets/images/antenatal.jpg';
+import postnatalCareImg from '../assets/images/postnatal.jpg';
 import prenatalCareImg from '../assets/images/parental.jpg';
 
 const ServicesPage: React.FC = () => {
@@ -43,12 +43,12 @@ const ServicesPage: React.FC = () => {
       image: familyPlanningImg,
     },
     {
-      id: 'antenatal-care',
-      title: t('services.antenatalCare.title'),
-      description: t('services.antenatalCare.description'),
-      features: t('services.antenatalCare.features', { returnObjects: true }) as string[],
+      id: 'postnatal-care',
+      title: t('services.postnatalCare.title'),
+      description: t('services.postnatalCare.description'),
+      features: t('services.postnatalCare.features', { returnObjects: true }) as string[],
       icon: 'HeartPulse',
-      image: antenatalCareImg,
+      image: postnatalCareImg,
     },
     {
       id: 'prenatal-care',
@@ -104,7 +104,7 @@ const ServicesPage: React.FC = () => {
       
       {/* Services Overview */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto px-4"> {/* Changed container to max-w-4xl */}
           <SectionTitle 
             title="Comprehensive Healthcare Solutions"
             subtitle="At GEDA Clinic, we offer a range of medical services to meet the healthcare needs of your entire family. Our team of experienced doctors and medical professionals are dedicated to providing high-quality care in a comfortable and welcoming environment."
@@ -128,7 +128,7 @@ const ServicesPage: React.FC = () => {
                     <img 
                       src={service.image} 
                       alt={service.title}
-                      className="w-full h-80 object-cover"
+                      className="w-full object-contain" // Removed max-width and mx-auto
                     />
                   </div>
                 </div>

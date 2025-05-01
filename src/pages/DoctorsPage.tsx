@@ -15,7 +15,7 @@ const teamMembers: Doctor[] = [
     id: 1, 
     name: 'Dr. Feyisa', 
     specialty: 'General Practitioner', 
-    bio: 'Dr. Kebede has over 10 years of experience in general medicine.', 
+    bio: 'Dr. Feyisa has over 10 years of experience in general medicine.', 
     education: 'MD, Addis Ababa University', 
     experience: '10+ Years', 
     image: DoctorImage // Use imported image
@@ -24,7 +24,7 @@ const teamMembers: Doctor[] = [
     id: 2, 
     name: 'Nurse Hana Lemma', 
     specialty: 'Registered Nurse', 
-    bio: 'Nurse Lemma is dedicated to providing compassionate patient care.', 
+    bio: 'Nurse Hana Lemma is dedicated to providing compassionate patient care.', 
     education: 'BSc Nursing, Gondar University', 
     experience: '5+ Years', 
     image: NurseImage // Use imported image

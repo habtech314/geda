@@ -11,7 +11,7 @@ import SectionTitle from '../components/common/SectionTitle'; // Adjust the path
 import generalMedicineImg from '../assets/images/general.jpg';
 import pediatricsImg from '../assets/images/paiadtry.jpg';
 import familyPlanningImg from '../assets/images/family.jpg';
-import antenatalCareImg from '../assets/images/antenatal.jpg';
+import postnatalCareImg from '../assets/images/postnatal.jpg'; // Renamed variable
 import prenatalCareImg from '../assets/images/parental.jpg';
 import DoctorsPreview from '../pages/DoctorsPage'; // Adjust the path if necessary
 
@@ -56,12 +56,12 @@ const services = [
     image: familyPlanningImg, // Use imported image
   },
   {
-    id: 'antenatal-care',
-    title: 'Antenatal Care',
+    id: 'postnatal-care',
+    title: 'Postnatal Care',
     description: 'Care for expectant mothers during pregnancy.',
     features: ['Prenatal check-ups', 'Ultrasound scans', 'Nutritional counseling'],
     icon: 'HeartPulse',
-    image: antenatalCareImg, // Use imported image
+    image: postnatalCareImg, // Use corrected variable name
   },
   {
     id: 'prenatal-care',
