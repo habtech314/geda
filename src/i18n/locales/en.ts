@@ -214,30 +214,7 @@ export default {
     title: 'Patient Testimonials',
     subtitle: 'What our patients say about us',
     testimonialsList: [
-      {
-        id: 1,
-        name: 'Ahmed Mohammed',
-        text: 'I\'ve been a patient at GEDA Clinic for over 5 years, and I\'ve always received excellent care. The doctors are knowledgeable and friendly, and the staff is always helpful.',
-        rating: 5
-      },
-      {
-        id: 2,
-        name: 'Sophia Mekonnen',
-        text: 'As a mother of two young children, I appreciate the quality care provided by the pediatric department at GEDA Clinic. The doctors are patient and gentle with my kids, and they always take the time to address all my concerns.',
-        rating: 5
-      },
-      {
-        id: 3,
-        name: 'Daniel Tesfaye',
-        text: 'The service at GEDA Clinic is exceptional. From the moment you walk in, you\'re greeted with a smile. The doctors are thorough and take the time to explain everything clearly.',
-        rating: 4
-      },
-      {
-        id: 4,
-        name: 'Liya Tadesse',
-        text: 'I recently switched to GEDA Clinic and I\'m so glad I did. The level of care and attention I received was outstanding. The facilities are clean and modern, and the staff is professional and friendly.',
-        rating: 5
-      }
+      
     ]
   }
 };

@@ -9,18 +9,18 @@ import { Doctor } from '../types'; // Ensure correct type import path
 const teamMembers: Doctor[] = [
   {
     id: 1, 
-    name: 'Dr. Fayisa', 
+    name: 'DR. Feyisa', 
     specialty: 'General Practitioner', 
-    bio: 'Dr. Feyisa has over 10 years of experience in general medicine.', 
+    bio: 'DR. Feyisa has over 10 years of experience in general medicine.', 
     education: 'MD, Addis Ababa University', 
     experience: '10+ Years', 
     image: '/../assets/images/doc.png' 
   },
   {
     id: 2, 
-    name: 'Nurse Hana', 
+    name: 'Nurse. Hana', 
     specialty: 'Registered Nurse', 
-    bio: 'Nurse Hana  is dedicated to providing compassionate patient care.', 
+    bio: 'Nurse. Hana is dedicated to providing compassionate patient care.', 
     education: 'BSc Nursing, Gondar University', 
     experience: '5+ Years', 
     image: '.' 
