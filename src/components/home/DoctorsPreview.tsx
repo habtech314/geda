@@ -11,7 +11,7 @@ const teamMembers: Doctor[] = [
     id: 1, 
     name: 'Dr. Fayisa', 
     specialty: 'General Practitioner', 
-    bio: 'Dr. Kebede has over 10 years of experience in general medicine.', 
+    bio: 'Dr. Feyisa has over 10 years of experience in general medicine.', 
     education: 'MD, Addis Ababa University', 
     experience: '10+ Years', 
     image: '/../assets/images/doc.png' 
