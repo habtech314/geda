@@ -13,18 +13,18 @@ import NurseImage from '../assets/images/nurse.png';  // Replace with the actual
 const teamMembers: Doctor[] = [
   {
     id: 1, 
-    name: 'DR. Feyisa', 
+    name: 'Dr menylik', 
     specialty: 'General Practitioner', 
-    bio: 'DR. Feyisa has over 10 years of experience in general medicine.', 
+    bio: 'Dr menylik has over 10 years of experience in general medicine.', 
     education: 'MD, Addis Ababa University', 
     experience: '10+ Years', 
     image: DoctorImage // Use imported image
   },
   {
     id: 2, 
-    name: 'Nurse. Hana', 
+    name: 'Dr nigussie', 
     specialty: 'Registered Nurse', 
-    bio: 'Nurse. Hana is dedicated to providing compassionate patient care.', 
+    bio: 'Dr nigussie is dedicated to providing compassionate patient care.', 
     education: 'BSc Nursing, Gondar University', 
     experience: '5+ Years', 
     image: NurseImage // Use imported image
