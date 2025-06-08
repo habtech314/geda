@@ -32,52 +32,52 @@ const testimonials = [
 
 const services = [
   {
-    id: 'general-medicine',
-    title: 'General Medicine',
-    description: 'Comprehensive care for adults and children.',
-    features: ['Routine check-ups', 'Chronic disease management', 'Preventive care'],
+    id: 'dental-fillings',
+    title: 'Dental Fillings',
+    description: 'Restore the health and function of your teeth with our high-quality dental fillings.',
+    features: ['Composite Fillings', 'Amalgam Fillings', 'Glass Ionomer Fillings'],
     icon: 'Stethoscope',
     image: generalMedicineImg, // Use imported image
   },
   {
-    id: 'pediatrics',
-    title: 'Pediatrics',
-    description: 'Specialized care for infants, children, and adolescents.',
-    features: ['Vaccinations', 'Growth monitoring', 'Developmental assessments'],
+    id: 'braces',
+    title: 'Braces (Metal & Ceramic)',
+    description: 'Straighten your teeth and achieve a confident smile with our braces options.',
+    features: ['Metal Braces', 'Ceramic Braces', 'Lingual Braces', 'Orthodontic Consultation'],
     icon: 'Baby',
     image: pediatricsImg, // Use imported image
   },
   {
-    id: 'family-planning',
-    title: 'Family Planning',
-    description: 'Guidance and services for family planning.',
-    features: ['Contraceptive counseling', 'Fertility assessments', 'Reproductive health education'],
+    id: 'dental-implants',
+    title: 'Dental Implants',
+    description: 'Replace missing teeth with our long-lasting and natural-looking dental implants.',
+    features: ['Single Tooth Implants', 'Multiple Tooth Implants', 'Implant Consultation'],
     icon: 'Users',
+    image: prenatalCareImg, // Use imported image
+  },
+  {
+    id: 'orthodontics',
+    title: 'Orthodontics',
+    description: 'Specialized dental care for correcting teeth and jaw alignment.',
+    features: ['Braces', 'Aligners', 'Retainers'],
+    icon: 'ClipboardCheck',
     image: familyPlanningImg, // Use imported image
   },
   {
-    id: 'postnatal-care',
-    title: 'Postnatal Care',
-    description: 'Care for expectant mothers during pregnancy.',
-    features: ['Prenatal check-ups', 'Ultrasound scans', 'Nutritional counseling'],
-    icon: 'HeartPulse',
-    image: postnatalCareImg, // Use corrected variable name
-  },
-  {
-    id: 'prenatal-care',
-    title: 'Prenatal Care',
-    description: 'Support and care for a healthy pregnancy.',
-    features: ['Birth planning', 'Labor preparation', 'Postnatal follow-ups'],
+    id: 'prosthodontics',
+    title: 'Prosthodontics',
+    description: 'Specialized dental care for restoring missing or damaged teeth.',
+    features: ['Crowns', 'Bridges', 'Dentures'],
     icon: 'ClipboardCheck',
-    image: prenatalCareImg, // Use imported image
-  },
+    image: familyPlanningImg, // Use imported image
+  }
 ];
 
 const HomePage: React.FC = () => {
-  const pageTitle = "GEDA Clinic - Quality Healthcare in Addis Ababa";
-  const pageDescription = "GEDA Clinic offers comprehensive general medicine and pediatric care in Addis Ababa. Experienced doctors, modern facilities. Book your appointment today!";
-  const canonicalUrl = "https://geda.vercel.app/";
-  const ogImageUrl = "https://geda.vercel.app/assets/images/general.jpg"; // Use a relevant image URL
+  const pageTitle = "Melani Clinic - Quality Healthcare in Addis Ababa";
+  const pageDescription = "Melani Clinic offers comprehensive general medicine and pediatric care in Addis Ababa. Experienced doctors, modern facilities. Book your appointment today!";
+const canonicalUrl = "https://melani.vercel.app/";
+  const ogImageUrl = "https://melani.vercel.app/assets/images/general.jpg"; // Use a relevant image URL
 
   return (
     <>
@@ -93,7 +93,7 @@ const HomePage: React.FC = () => {
         twitterDescription={pageDescription}
         twitterImage={ogImageUrl}
         // Keywords can use the default or be customized:
-        // keywords={['GEDA Clinic', 'Addis Ababa', 'healthcare', 'pediatrics', 'general medicine', 'doctor near me']}
+        // keywords={['Melani Clinic', 'Addis Ababa', 'healthcare', 'pediatrics', 'general medicine', 'doctor near me']}
       />
       <motion.div
         initial={{ opacity: 0 }}
@@ -106,9 +106,9 @@ const HomePage: React.FC = () => {
  {/* Services Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <SectionTitle 
-            title="Comprehensive Healthcare Solutions"
-            subtitle="At GEDA Clinic, we offer a range of medical services to meet the healthcare needs of your entire family. Our team of experienced doctors and medical professionals are dedicated to providing high-quality care in a comfortable and welcoming environment."
+<SectionTitle 
+            title="Comprehensive Dental Solutions"
+            subtitle="At Melani Dental Clinic, we offer a range of dental services to meet the oral healthcare needs of your entire family. Our team of experienced dentists and dental professionals are dedicated to providing high-quality care in a comfortable and welcoming environment."
           />
           
           <div className="mt-12 space-y-16">
@@ -126,7 +126,7 @@ const HomePage: React.FC = () => {
           <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
             <div className="rounded-lg overflow-hidden shadow-md">
               <img 
-                src={service.image} // Use the imported image here
+                src="" // Use the imported image here
                 alt={service.title}
                 className="w-full h-80 object-cover"
               />
@@ -155,6 +155,9 @@ const HomePage: React.FC = () => {
                       </li>
                     ))}
                   </ul>
+                  <a href="/services" className="inline-block mt-4 px-6 py-3 bg-primary-500 text-white font-semibold rounded-md hover:bg-primary-700 transition-colors duration-300">
+                    More Services
+                  </a>
                 </div>
               </motion.div>
             ))}
@@ -168,47 +171,6 @@ const HomePage: React.FC = () => {
       {/* Appointment Call-to-Action Section */}
       <AppointmentCTA />
 
-      {/* Testimonials Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-semibold text-center mb-8">What Our Patients Say</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {testimonials.slice(0, 2).map((testimonial) => (
-              <motion.div
-                key={testimonial.id}
-                className="bg-white p-6 rounded-lg shadow-md border border-neutral-100 relative transition-all duration-300 hover:shadow-xl hover:scale-105"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 20 }}
-                transition={{ duration: 0.5 }}
-              >
-                <Quote className="absolute top-4 right-4 w-8 h-8 text-primary-100" />
-
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center text-primary-500 font-bold mr-3">
-                    {testimonial.name.charAt(0)}
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-neutral-800">{testimonial.name}</h3>
-                    <div className="flex">
-                      {Array.from({ length: 5 }).map((_, i) => (
-                        <Star
-                          key={i}
-                          size={16}
-                          className={i < testimonial.rating ? 'text-yellow-400' : 'text-neutral-300'}
-                          fill={i < testimonial.rating ? 'currentColor' : 'none'}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                </div>
-
-                <p className="text-neutral-600">{testimonial.text}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
      {/* Map and Opening Hours Section */}
 <section className="py-16 bg-white">
@@ -220,7 +182,7 @@ const HomePage: React.FC = () => {
         <iframe
           title="Clinic Location"
           // --- Updated src attribute ---
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.0816115257817!2d38.8188484!3d8.8632834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b794457a3e095%3A0xf4c29892d9cf462f!2zVHVsdSBEaW10dSBDb25kb21pbml1bXMgUHJvamVjdCAxMiB8IOGJseGIiSDhi7LhiJ3hibEg4Yqu4YqV4Yu24Yia4YqS4Yuo4YidIOGNleGIruGMgOGKreGJtSAxMg!5e1!3m2!1sen!2set!4v1745784802183!5m2!1sen!2set"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.0816115257817!2d38.8188484!3d8.8632834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b794457a3e095%3A0xf4c29892d9cf462f!2zVHVsdUFEaW10dSBDb25kb21pbml1bXMgUHJvamVjdCAxMiB8IOGJseGIiSDhi7LhiJ3hibEg4Yqu4YqV4Yu24Yia4YqS4Yuo4YidIOGNleGIruGMgOGKreGJtSAxMg!5e1!3m2!1sen!2set!4v1745784802183!5m2!1sen!2set"
           width="100%" // Kept 100% for responsiveness
           height="450" // Updated height
           style={{ border: 0 }}

@@ -5,10 +5,10 @@ const HomePage: React.FC = () => {
   return (
     <>
       <SEO 
-        title="Gedaa Clinic - Best Clinic in Addis Ababa | Medical & Pediatric Care"
-        description="Gedaa Clinic offers quality medical services in Addis Ababa, including pediatrics, lab tests, and general healthcare with top professionals. Book today!"
+        title="Gedaa Dental Clinic - Best Dental Clinic in Addis Ababa | Medical & Pediatric Care"
+        description="Gedaa Dental Clinic offers quality medical services in Addis Ababa, including pediatrics, lab tests, and general healthcare with top professionals. Book today!"
         keywords={[
-          "Best Clinic in Addis Ababa",
+          "Best Dental Clinic in Addis Ababa",
           "Addis Ababa clinic",
           "clinic near me",
           "medical services",
@@ -18,16 +18,16 @@ const HomePage: React.FC = () => {
         ]}
         canonicalUrl="https://geda.vercel.app/"
         ogUrl="https://geda.vercel.app/"
-        ogTitle="Gedaa Clinic | Comprehensive Medical & Pediatric Services"
-        ogDescription="Experience premier healthcare at Gedaa Clinic. Book appointments, access expert doctors, and discover trusted medical services in Addis Ababa."
+        ogTitle="Gedaa Dental Clinic | Comprehensive Medical & Pediatric Services"
+        ogDescription="Experience premier healthcare at Gedaa Dental Clinic. Book appointments, access expert doctors, and discover trusted medical services in Addis Ababa."
         ogImage="https://geda.vercel.app/assets/images/doc.png"
-        twitterTitle="Gedaa Clinic - Best Medical Services in Addis Ababa"
+        twitterTitle="Gedaa Dental Clinic - Best Medical Services in Addis Ababa"
         twitterDescription="Premier clinic for family health, pediatrics, labs, and care in Addis Ababa."
         twitterImage="https://geda.vercel.app/assets/images/doc.png"
         structuredData={{
           "@context": "http://schema.org",
           "@type": "MedicalClinic",
-          "name": "Gedaa Clinic",
+          "name": "Gedaa Dental Clinic",
           "image": "https://geda.vercel.app/assets/images/doc.png",
           "url": "https://geda.vercel.app/",
           "telephone": "+251112345678",

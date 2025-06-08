@@ -1,0 +1,175 @@
+[
+  {
+    "title": "Dental Fillings",
+    "description": "Restore the health and function of your teeth with our high-quality dental fillings.",
+    "services": [
+      "Composite Fillings",
+      "Amalgam Fillings",
+      "Glass Ionomer Fillings"
+    ],
+    "imagePlaceholder": "[Image Placeholder: Dental Fillings]"
+  },
+  {
+    "title": "Scaling and Polishing",
+    "description": "Maintain a healthy and bright smile with our professional scaling and polishing services.",
+    "services": [
+      "Plaque Removal",
+      "Tartar Removal",
+      "Teeth Polishing"
+    ],
+    "imagePlaceholder": "[Image Placeholder: Scaling and Polishing]"
+  },
+  {
+    "title": "Preventive Dental Care",
+    "description": "Protect your oral health with our comprehensive preventive dental care services.",
+    "services": [
+      "Regular Check-ups",
+      "Dental Cleanings",
+      "Fluoride Treatments"
+    ],
+    "imagePlaceholder": "[Image Placeholder: Preventive Dental Care]"
+  },
+  {
+    "title": "Braces (Metal & Ceramic)",
+    "description": "Straighten your teeth and achieve a confident smile with our braces options.",
+    "services": [
+      "Metal Braces",
+      "Ceramic Braces",
+      "Lingual Braces",
+      "Orthodontic Consultation"
+    ],
+    "imagePlaceholder": "[Image Placeholder: Braces (Metal & Ceramic)]"
+  },
+  {
+    "title": "Orthodontics",
+    "description": "Enhance your smile and dental alignment with our orthodontic treatments.",
+    "services": [
+      "Braces",
+      "Aligners",
+      "Retainers"
+    ],
+    "imagePlaceholder": "[Image Placeholder: Orthodontics]"
+  },
+  {
+    "title": "Clear Aligners",
+    "description": "Achieve a straighter smile discreetly with our clear aligner treatments.",
+    "services": [
+      "Invisalign",
+      "ClearCorrect",
+      "Aligner Consultation"
+    ],
+    "imagePlaceholder": "[Image Placeholder: Clear Aligners]"
+  },
+  {
+    "title": "Retainers",
+    "description": "Protect your investment in a straighter smile with our custom-fitted retainers.",
+    "services": [
+      "Fixed Retainers",
+      "Removable Retainers",
+      "Retainer Check-ups"
+    ],
+    "imagePlaceholder": "[Image Placeholder: Retainers]"
+  },
+  {
+    "title": "Bite Correction",
+    "description": "Address bite problems and improve your oral health with our bite correction treatments.",
+    "services": [
+      "Overbite Correction",
+      "Underbite Correction",
+      "Crossbite Correction"
+    ],
+    "imagePlaceholder": "[Image Placeholder: Bite Correction]"
+  },
+  {
+    "title": "Dental Crowns and Bridges",
+    "description": "Restore damaged or missing teeth with our durable and natural-looking dental crowns and bridges.",
+    "services": [
+      "Porcelain Crowns",
+      "Zirconia Crowns",
+      "Dental Bridges"
+    ],
+    "imagePlaceholder": "[Image Placeholder: Dental Crowns and Bridges]"
+  },
+  {
+    "title": "Dentures (Full and Partial)",
+    "description": "Regain your smile and confidence with our full and partial denture options.",
+    "services": [
+      "Full Dentures",
+      "Partial Dentures",
+      "Denture Adjustments"
+    ],
+    "imagePlaceholder": "[Image Placeholder: Dentures (Full and Partial)]"
+  },
+  {
+    "title": "Dental Implants",
+    "description": "Replace missing teeth with our long-lasting and natural-looking dental implants.",
+    "services": [
+      "Single Tooth Implants",
+      "Multiple Tooth Implants",
+      "Implant Consultation"
+    ],
+    "imagePlaceholder": "[Image Placeholder: Dental Implants]"
+  },
+  {
+    "title": "Prosthodontics",
+    "description": "Restore and replace damaged or missing teeth with our prosthodontic treatments.",
+    "services": [
+      "Crowns",
+      "Bridges",
+      "Dentures",
+      "Implants"
+    ],
+    "imagePlaceholder": "[Image Placeholder: Prosthodontics]"
+  },
+  {
+    "title": "Restorative Dentistry",
+    "description": "Care focused on restoring the function and integrity of your teeth.",
+    "services": [
+      "Dental fillings",
+      "Crowns and bridges",
+      "Root canal therapy",
+      "Dentures"
+    ],
+    "imagePlaceholder": "[Image Placeholder: Restorative Dentistry]"
+  },
+  {
+    "title": "Digital X-rays",
+    "description": "Benefit from our advanced digital X-ray technology for accurate and safe diagnostics.",
+    "services": [
+      "Panoramic X-rays",
+      "Cephalometric X-rays",
+      "Bitewing X-rays"
+    ],
+    "imagePlaceholder": "[Image Placeholder: Digital X-rays]"
+  },
+  {
+    "title": "3D Imaging",
+    "description": "Experience the future of dental diagnostics with our 3D imaging technology.",
+    "services": [
+      "Cone Beam CT Scan",
+      "3D Treatment Planning",
+      "Implant Placement"
+    ],
+    "imagePlaceholder": "[Image Placeholder: 3D Imaging]"
+  },
+  {
+    "title": "Scaling and Root Planing",
+    "description": "Combat gum disease with our effective scaling and root planing treatments.",
+    "services": [
+      "Root Planing",
+      "Curettage",
+      "Periodontal Maintenance"
+    ],
+    "imagePlaceholder": "[Image Placeholder: Scaling and Root Planing]"
+  },
+  {
+    "title": "Gum Disease Treatment",
+    "description": "Protect your oral health with our comprehensive gum disease treatment services.",
+    "services": [
+      "Non-Surgical Treatment",
+      "Surgical Treatment",
+      "Periodontal Maintenance"
+    ],
+    "imagePlaceholder": "[Image Placeholder: Gum Disease Treatment]"
+  }
+]

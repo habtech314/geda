@@ -1,41 +1,35 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SEO from '../components/common/SEO';
-// ...rest of existing imports...
 
-const AppointmentPage: React.FC = () => {
-  // ...existing hooks and state...
-
+const HomePage: React.FC = () => {
   return (
     <>
-      <SEO
-        title="Book an Appointment | Gedaa Clinic Addis Ababa"
-        description="Schedule your consultation or check-up with Gedaa Clinic online. Fast booking, WhatsApp, Telegram, call, or visit for top medical care in Addis Ababa."
+      <SEO 
+        title="Melani Dental Clinic - Best Dental Clinic in Addis Ababa | Medical & Pediatric Care"
+        description="Melani Dental Clinic offers quality medical services in Addis Ababa, including pediatrics, lab tests, and general healthcare with top professionals. Book today!"
         keywords={[
-          "appointment booking",
-          "medical booking",
-          "consultation Addis Ababa",
+          "Best Dental Clinic in Addis Ababa",
+          "Addis Ababa clinic",
           "clinic near me",
-          "book doctor online",
-          "clinic appointment",
-          "Gedaa Clinic"
+          "medical services",
+          "pediatrics",
+          "lab tests",
+          "emergency clinic Tulu Dimtu"
         ]}
-        canonicalUrl="https://geda.vercel.app/appointment"
-        ogUrl="https://geda.vercel.app/appointment"
-        ogTitle="Book an Appointment at Gedaa Clinic"
-        ogDescription="Book medical appointments instantly. Gedaa Clinic - fast, affordable healthcare in Addis Ababa."
+        canonicalUrl="https://geda.vercel.app/"
+        ogUrl="https://geda.vercel.app/"
+        ogTitle="Melani Dental Clinic | Comprehensive Medical & Pediatric Services"
+        ogDescription="Experience premier healthcare at Melani Dental Clinic. Book appointments, access expert doctors, and discover trusted medical services in Addis Ababa."
         ogImage="https://geda.vercel.app/assets/images/doc.png"
-        twitterTitle="Book a Medical Consultation | Gedaa Clinic"
-        twitterDescription="Easily book your check-up or consultation with Gedaa Clinic in Addis Ababa."
+        twitterTitle="Melani Dental Clinic - Best Medical Services in Addis Ababa"
+        twitterDescription="Premier clinic for family health, pediatrics, labs, and care in Addis Ababa."
         twitterImage="https://geda.vercel.app/assets/images/doc.png"
         structuredData={{
           "@context": "http://schema.org",
           "@type": "MedicalClinic",
-          "name": "Gedaa Clinic",
-          "url": "https://geda.vercel.app/appointment",
-          "serviceProvided": [
-            "General Check-up",
-            "Pediatric Consultation"
-          ],
+          "name": "Melani Dental Clinic",
+          "image": "https://geda.vercel.app/assets/images/doc.png",
+          "url": "https://geda.vercel.app/",
           "telephone": "+251112345678",
           "address": {
             "@type": "PostalAddress",
@@ -43,16 +37,33 @@ const AppointmentPage: React.FC = () => {
             "addressLocality": "Addis Ababa",
             "addressCountry": "ET"
           },
-          "potentialAction": {
-            "@type": "ReserveAction",
-            "target": "https://geda.vercel.app/appointment",
-            "name": "Book Medical Appointment"
-          }
+          "openingHours": [
+            "Mo-Fr 08:00-20:00",
+            "Sa 09:00-17:00"
+          ],
+          "priceRange": "$$",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "196"
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "author": "A. Kassahun",
+              "datePublished": "2023-06-11",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "reviewBody": "Modern clinic, friendly doctors, very clean."
+            }
+          ]
         }}
       />
-      {/* ...rest of AppointmentPage content... */}
+      {/* ...existing homepage content... */}
     </>
   );
 };
 
-export default AppointmentPage;
+export default HomePage;

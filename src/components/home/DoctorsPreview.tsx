@@ -5,26 +5,27 @@ import { motion } from 'framer-motion';
 import SectionTitle from '../common/SectionTitle';
 import { Doctor } from '../types'; // Ensure correct type import path
 
-// Define the specific team members (same as in DoctorsPage.tsx)
+// Define the specific team members, updated for a dental clinic
 const teamMembers: Doctor[] = [
   {
     id: 1, 
-    name: 'DR. Feyisa', 
-    specialty: 'General Practitioner', 
-    bio: 'DR. Feyisa has over 10 years of experience in general medicine.', 
-    education: 'MD, Addis Ababa University', 
-    experience: '10+ Years', 
-    image: '/../assets/images/doc.png' 
+    name: 'DR. Sofia Chen', // Changed name
+    specialty: 'General Dentist', // Changed specialty
+    bio: 'DR. Sofia Chen has over 12 years of experience providing comprehensive family dental care, focusing on preventive and restorative treatments.', // Updated bio
+    education: 'DDS, University of Dental Medicine, NA', // Updated education
+    experience: '12+ Years', 
+    image: '/assets/images/dentist1.png' // Changed image path to a dental professional
   },
   {
     id: 2, 
-    name: 'Nurse. Hana', 
-    specialty: 'Registered Nurse', 
-    bio: 'Nurse. Hana is dedicated to providing compassionate patient care.', 
-    education: 'BSc Nursing, Gondar University', 
-    experience: '5+ Years', 
-    image: '.' 
+    name: 'DR. Alex Turner', // Changed name
+    specialty: 'Orthodontist', // Changed specialty
+    bio: 'DR. Alex Turner specializes in orthodontics, helping patients achieve confident smiles through braces and clear aligners.', // Updated bio
+    education: 'DDS, MS Orthodontics, NA State University', // Updated education
+    experience: '7+ Years', 
+    image: '/assets/images/dentist2.png' // Changed image path to another dental professional
   }
+  // If you need more members, add them here following the Doctor type
 ];
 
 const DoctorsPreview: React.FC = () => {
@@ -35,8 +36,8 @@ const DoctorsPreview: React.FC = () => {
     <section className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         <SectionTitle 
-          title={t('home.featuredDoctorsTitle')} 
-          subtitle="Our expert team of medical professionals is dedicated to providing the highest standard of care"
+          title={t('home.featuredDoctorsTitle')} // This translation key might need updating in your i18n files to "home.featuredDentistsTitle" for accuracy
+          subtitle="Our expert team of dental professionals is dedicated to providing the highest standard of oral care." // Updated subtitle for dental clinic
         />
         
         {/* Adjusted grid columns for 2 items, centered */}
@@ -66,7 +67,7 @@ const DoctorsPreview: React.FC = () => {
                 <div className="flex justify-between items-center">
                   <span className="text-sm text-neutral-500">{member.experience}</span>
                   <Link 
-                    to="/doctors" // Link remains the same
+                    to="/doctors" // Link remains the same, assumes 'doctors' page will now list dentists
                     className="text-primary-500 hover:text-primary-600 text-sm font-medium transition-colors"
                   >
                     {t('common.readMore')}
@@ -85,7 +86,7 @@ const DoctorsPreview: React.FC = () => {
             {t('common.bookAppointment')} {/* Assuming 'common.bookAppointment' exists in translations */}
           </Link>
           <Link
-            to="/doctors"
+            to="/doctors" // Link remains the same
             className="inline-block bg-secondary-500 hover:bg-secondary-600 text-white px-6 py-3 rounded-md font-medium transition-colors duration-300" // Using secondary color for distinction
           >
             {t('common.learnMore')} {/* Assuming 'common.learnMore' exists in translations */}

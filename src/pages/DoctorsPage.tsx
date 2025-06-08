@@ -35,26 +35,26 @@ const DoctorsPreview: React.FC = () => { // Consider renaming component if this 
   const { t } = useTranslation();
 
   const pageTitle = t('doctors.title', 'Meet Our Doctors'); // Add 'doctors.title' to translation files
-  const pageDescription = t('doctors.subtitle', 'Our expert team of medical professionals at GEDA Clinic.'); // Add 'doctors.subtitle'
-  const canonicalUrl = "https://geda.vercel.app/doctors";
+  const pageDescription = t('doctors.subtitle', 'Our expert team of medical professionals at Melani Clinic.'); // Add 'doctors.subtitle'
+  const canonicalUrl = "https://melani.vercel.app/doctors";
   // Use a relevant image, maybe a team photo or a generic medical image if no specific one exists
-  const ogImageUrl = "https://geda.vercel.app/assets/images/doc.png"; // Example using one doctor's image
+  const ogImageUrl = "https://melani.vercel.app/assets/images/doc.png";
 
   return (
     <>
       <SEO
         title={pageTitle}
         description={pageDescription}
-        canonicalUrl={canonicalUrl}
-        ogUrl={canonicalUrl}
+        canonicalUrl="https://melani.vercel.app/doctors"
+        ogUrl="https://melani.vercel.app/doctors"
         ogTitle={pageTitle}
         ogDescription={pageDescription}
-        ogImage={ogImageUrl}
+        ogImage="https://melani.vercel.app/assets/images/doc.png"
         twitterTitle={pageTitle}
         twitterDescription={pageDescription}
-        twitterImage={ogImageUrl}
+        twitterImage="https://melani.vercel.app/assets/images/doc.png"
         keywords={[ // Custom keywords for Doctors page
-          'GEDA Clinic doctors',
+          'Melani Clinic doctors',
           'medical team Addis Ababa',
           'general practitioner',
           'pediatrician Addis Ababa', // Add if applicable

@@ -1,6 +1,6 @@
 export default {
   common: {
-    clinic: 'GEDA Clinic',
+    clinic: 'Melani Clinic',
     tagline: 'Your Health, Our Commitment',
     bookAppointment: 'Book Appointment',
     learnMore: 'Learn More',
@@ -11,7 +11,7 @@ export default {
     address: 'tultdimtu addisababa',
     phone: '0912204709',
     email: 'info@gedaclinic.com',
-    copyright: '© 2025 GEDA Clinic. All rights reserved.',
+    copyright: '© 2025 Melani Clinic. All rights reserved.',
   },
   navigation: {
     home: 'Home',
@@ -23,17 +23,17 @@ export default {
     testimonials: 'Testimonials',
   },
   home: {
-    heroTitle: 'Your Health, Our Commitment',
-    heroSubtitle: 'Providing quality healthcare services for the whole family',
+    heroTitle: 'Your Smile, Our Priority',
+    heroSubtitle: 'Professional, gentle dental care for every stage of your smile.',
     heroCta: 'Book an Appointment',
-    welcomeTitle: 'Welcome to GEDA Clinic',
-    welcomeText: 'At GEDA Clinic, we are dedicated to providing comprehensive healthcare services with a focus on patient comfort and wellbeing. Our team of experienced doctors and medical professionals are committed to delivering the highest standard of care.',
+    welcomeTitle: 'Welcome to Melani Clinic',
+    welcomeText: 'At Melani Clinic, we are dedicated to providing comprehensive healthcare services with a focus on patient comfort and wellbeing. Our team of experienced doctors and medical professionals are committed to delivering the highest standard of care.',
     servicesTitle: 'Our Services',
     featuredDoctorsTitle: 'Meet Our Doctors',
     testimonialsTitle: 'What Our Patients Say',
   },
   about: {
-    title: 'About GEDA Clinic',
+    title: 'About Melani Clinic',
     subtitle: 'Committed to Excellence in Healthcare',
     missionTitle: 'Our Mission',
     missionText: 'To provide accessible, high-quality healthcare services with compassion and respect for all patients.',
@@ -59,20 +59,18 @@ export default {
       }
     ],
     historyTitle: 'Our History',
-    historyText: 'GEDA Clinic was established in 2010 with a vision to provide quality healthcare services to the community. Over the years, we have grown to become a trusted name in healthcare, serving thousands of patients with dedication and excellence.'
+    historyText: 'Melani Clinic was established in 2010 with a vision to provide quality healthcare services to the community. Over the years, we have grown to become a trusted name in healthcare, serving thousands of patients with dedication and excellence.'
   },
   services: {
     title: 'Our Services',
     subtitle: 'Comprehensive Healthcare Solutions',
     generalMedicine: {
-      title: 'General Medicine',
-      description: 'Our general medicine department offers comprehensive healthcare services for adults of all ages, including diagnosis and treatment of common illnesses, preventive care, health screenings, and management of chronic conditions.',
+      title: 'Tooth Extraction',
+      description: 'We provide gentle and effective tooth extraction services to alleviate pain and prevent further complications.',
       features: [
-        'Comprehensive health check-ups',
-        'Management of chronic diseases',
-        'Preventive healthcare',
-        'Immunizations',
-        'Health education and counseling'
+        'Simple Extraction',
+        'Surgical Extraction',
+        'Wisdom Teeth Extraction'
       ]
     },
     pediatrics: {
@@ -129,6 +127,14 @@ export default {
         'Management of high-risk pregnancies',
         'Postpartum care planning'
       ]
+    },
+    '3dImaging': {
+      title: '3D Imaging',
+      description: 'Advanced imaging providing detailed views of teeth, bones, and soft tissues for precise diagnostics and surgical planning.'
+    },
+    digitalRadiography: {
+      title: 'Digital Radiography',
+      description: 'Fast, low-radiation imaging technology to detect dental issues accurately and aid treatment planning.'
     }
   },
   doctors: {
@@ -154,7 +160,6 @@ export default {
       {
         id: 3,
         name: 'Dr. Emily Wilson',
-        specialty: 'General Medicine',
         bio: 'Dr. Emily Wilson focuses on holistic healthcare approaches. She believes in treating the whole person and not just the symptoms.',
         education: 'MD, Stanford University',
         experience: '12+ years'
@@ -174,12 +179,8 @@ export default {
     subtitle: 'We\'re here to help you',
     formTitle: 'Appointment Request Form',
     nameLabel: 'Full Name',
-    emailLabel: 'Email Address',
-    phoneLabel: 'Phone Number',
-    dateLabel: 'Preferred Date',
-    timeLabel: 'Preferred Time',
-    doctorLabel: 'Preferred Doctor',
-    serviceLabel: 'Service',
+    emailLabel: 'Your Email',
+    subjectLabel: 'Subject',
     messageLabel: 'Additional Information',
     submitButton: 'Request Appointment',
     contactTitle: 'Or Contact Us Directly',
@@ -187,7 +188,7 @@ export default {
     whatsappText: 'Chat with us on WhatsApp',
     telegramTitle: 'Telegram',
     telegramText: 'Message us on Telegram',
-    phoneTitle: 'Phone',
+    phoneTitle: 'Call Us',
     phoneText: 'Call us directly',
     successMessage: 'Your appointment request has been submitted successfully. We will contact you shortly to confirm your appointment.',
     errorMessage: 'There was an error submitting your appointment request. Please try again or contact us directly.'

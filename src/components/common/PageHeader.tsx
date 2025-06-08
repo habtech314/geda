@@ -10,7 +10,8 @@ interface PageHeaderProps {
 const PageHeader: React.FC<PageHeaderProps> = ({ 
   title, 
   subtitle,
-  backgroundImage = 'https://images.pexels.com/photos/247786/pexels-photo-247786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' 
+  // Changed the default background image to a dental-themed one from Pexels
+  backgroundImage = 'https://images.pexels.com/photos/3845648/pexels-photo-3845648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' 
 }) => {
   return (
     <section 

@@ -12,12 +12,12 @@ const WelcomeSection: React.FC = () => {
     {
       icon: <Heart className="w-10 h-10 text-primary-500" />,
       title: 'Quality Care',
-      description: 'We provide the highest standard of medical care with state-of-the-art equipment and experienced professionals.',
+      description: 'We provide the highest standard of dental care with state-of-the-art equipment and experienced dental professionals.',
     },
     {
       icon: <User className="w-10 h-10 text-primary-500" />,
-      title: 'Expert Doctors',
-      description: 'Our team of medical experts includes specialists with years of experience in their respective fields.',
+      title: 'Expert Dentists',
+      description: 'Our team of dental experts includes specialists with years of experience in their respective fields.',
     },
     {
       icon: <Clock className="w-10 h-10 text-primary-500" />,
@@ -27,7 +27,7 @@ const WelcomeSection: React.FC = () => {
     {
       icon: <CheckCircle className="w-10 h-10 text-primary-500" />,
       title: 'Holistic Approach',
-      description: 'We focus on treating not just the symptoms but the whole person for comprehensive health and wellness.',
+      description: 'We focus on treating not just the symptoms but the whole person for comprehensive oral health and overall wellness.',
     },
   ];
 
@@ -35,8 +35,8 @@ const WelcomeSection: React.FC = () => {
     <section className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         <SectionTitle 
-          title={t('home.welcomeTitle')} 
-          subtitle={t('home.welcomeText')}
+          title="Welcome to Melani Dental Clinic"
+          subtitle="At Melani Dental Clinic, we are dedicated to providing comprehensive dental care services with a focus on patient comfort and wellbeing. Our team of experienced dentists and dental professionals are committed to delivering the highest standard of care."
         />
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">

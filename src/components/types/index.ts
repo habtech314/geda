@@ -12,7 +12,7 @@ export type Service = {
   id: string;
   title: string;
   description: string;
-  features: string[];
+  services: string[];
   icon: string;
   image?: string; // Added image property
 };
